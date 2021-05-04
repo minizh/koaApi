@@ -9,7 +9,7 @@
     "debug": "nodemon --inspect=9229 ./dist/server.bundle.js",
     "nodemon": "cross-env NODE_ENV=development nodemon --exec babel-node --inspect ./src/index.js",
     "clear": "rimraf dist",
-    "dev": "npm-run-all -p watch debug"
+    "dev": "npm-run-all -p start debug"
   },
   "keywords": [],
   "author": "",

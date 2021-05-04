@@ -15,7 +15,6 @@ class LoginController {
     const sid = body.sid
     const code = body.code
     // 校验验证码的时效性、正确性
-    debugger
     const codeValidate = await checkCode(sid, code)
     if (codeValidate) {
       // 校验登录用户名、密码的正确性
